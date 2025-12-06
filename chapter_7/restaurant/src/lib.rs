@@ -102,7 +102,7 @@ pub fn eat_at_restaurant1() {
 use rand::Rng;// We can call on external dependency declared in Cargo.toml file like this, by using
               // its name as the root
 
-use std::{cmp::Ordering, io};// You can use nested paths to include multiple paths at once
+//use std::{cmp::Ordering, io};// You can use nested paths to include multiple paths at once
                              // use std::io{self, Write}; would include std::io and std::io::Write
 
 use std::collections::*;// This brings all public items from the path into scope and is called the
