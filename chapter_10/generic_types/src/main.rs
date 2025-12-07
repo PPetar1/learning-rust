@@ -83,6 +83,5 @@ impl<X1, Y1> Point_<X1, Y1> {
 // incure any runtime cost
 
 
-// Traits
 
 
