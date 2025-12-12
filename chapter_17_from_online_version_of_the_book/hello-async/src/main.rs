@@ -2,6 +2,14 @@
 // traits and functions from various crates, primarly futures and tokio. future crate is for async
 // code and tokio is most widely used async runtime in Rust
 
+
+// Main difference between async and standard thread concurency is that threads use 
+// operating system threads while async yields when awaiting and gives other parts of code chance
+// to continue executing while we wait (this is implemented with runtimes like tokio). Async 
+// is helpful for I/O bound operations while for CPU bound threads or methods like
+// tokio::task::spawn_blocking should be used
+// https://rust-for-c-programmers.com/ch22/22_3_choosing_the_right_model_threads_vs_async_for_i_o_bound_vs_cpu_bound_tasks.html
+
 use trpl::{Html, Either};
 use std::future::Future;
 
